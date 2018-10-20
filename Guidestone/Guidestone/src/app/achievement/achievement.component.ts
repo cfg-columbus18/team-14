@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SuggestionService } from '../suggestion.service';
 
 @Component({
   selector: 'app-achievement',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./achievement.component.scss']
 })
 export class AchievementComponent implements OnInit {
+
 
   constructor() { }
 
