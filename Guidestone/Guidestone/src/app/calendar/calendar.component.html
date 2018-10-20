@@ -40,7 +40,7 @@
               <td (click)="handleClick5()">17</td>
               <td (click)="handleClick4()">18</td>
               <td (click)="handleClick3()">19</td>
-              <td (click)="handleClick6()">20</td>
+              <td (click)="handleClickCS()">20</td>
             </tr>
             <tr>
                 <td (click)="handleClick2()">21</td>
@@ -68,9 +68,20 @@
       <br>
       Afternoon: Happy
       <br>
-      Hours spent on app: 32 minutes
+      Hours spent on app: 43 minutes
     </h1>
   </div>
+  <div>
+      <h1 *ngIf = "cs" id = "moodOfDay">
+        Morning: Sad
+        <br>
+        Afternoon: Happy
+        <br>
+        Hours spent on app: 
+        <span id = "realTime"></span>
+        minutes
+      </h1>
+    </div>
   <div>
       <h1 *ngIf = "c2" id = "moodOfDay">
           Morning: Angry
