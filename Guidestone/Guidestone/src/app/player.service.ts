@@ -45,6 +45,9 @@ export class PlayerService {
     getPhysicalPoints(){ 
       return this.PhysicalPoints; 
     }
+    getSocialPoints(){
+      return this.SocialPoints;
+    }
 
 
 
