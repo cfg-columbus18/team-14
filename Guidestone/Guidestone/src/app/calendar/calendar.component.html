@@ -18,11 +18,11 @@
         <tr>
           <td></td>
           <td (click)="handleClick()">1</td>
-          <td (click)="handleClick2()">2</td>
-          <td (click)="handleClick3()">3</td>
-          <td (click)="handleClick4()">4</td>
-          <td (click)="handleClick5()">5</td>
-          <td (click)="handleClick6()">6</td>
+          <td (click)="handleClick3()">2</td>
+          <td (click)="handleClick7()">3</td>
+          <td (click)="handleClick2()">4</td>
+          <td (click)="handleClick3()">5</td>
+          <td (click)="handleClick7()">6</td>
         </tr>
         <tr>
             <td (click)="handleClick7()">7</td>
@@ -30,7 +30,7 @@
             <td (click)="handleClick1()">9</td>
             <td (click)="handleClick2()">10</td>
             <td (click)="handleClick6()">11</td>
-            <td (click)="handleClick2()">12</td>
+            <td (click)="handleClick4()">12</td>
             <td (click)="handleClick5()">13</td>
           </tr>
           <tr>
@@ -43,19 +43,19 @@
               <td (click)="handleClickCS()">20</td>
             </tr>
             <tr>
-                <td (click)="handleClick2()">21</td>
-                <td (click)="handleClick3()">22</td>
-                <td (click)="handleClick7()">23</td>
-                <td (click)="handleClick2()">24</td>
-                <td (click)="handleClick4()">25</td>
-                <td (click)="handleClick5()">26</td>
-                <td (click)="handleClick2()">27</td> 
+                <td (click)="noData">21</td>
+                <td (click)="noData">22</td>
+                <td (click)="noData">23</td>
+                <td (click)="noData">24</td>
+                <td (click)="noData">25</td>
+                <td (click)="noData">26</td>
+                <td (click)="noData">27</td> 
               </tr>
               <tr>
-                  <td (click)="handleClick3()">28</td>
-                  <td (click)="handleClick6()">29</td>
-                  <td (click)="handleClick1()">30</td>
-                  <td (click)="handleClick2()">31</td>
+                  <td (click)="noData">28</td>
+                  <td (click)="noData">29</td>
+                  <td (click)="noData">30</td>
+                  <td (click)="noData">31</td>
                   <td (click)="handleClick2()"></td>
                   <td (click)="handleClick7()"></td>
                   <td (click)="handleClick2()"></td>
@@ -68,7 +68,7 @@
       <br>
       Afternoon: Happy
       <br>
-      Hours spent on app: 43 minutes
+      Minutes spent on app: 43 minutes
     </h1>
   </div>
   <div>
@@ -77,7 +77,7 @@
         <br>
         Afternoon: Happy
         <br>
-        Hours spent on app: 
+        Minutes spent on app: 
         <span id = "realTime"></span>
         minutes
       </h1>
@@ -88,7 +88,7 @@
           <br>
           Afternoon: Anxious
           <br>
-          Hours spent on app: 18 minutes
+          Minutes spent on app: 18 minutes
       </h1>
     </div>
     <div>
@@ -97,7 +97,7 @@
             <br>
             Afternoon: Mad
             <br>
-            Hours spent on app: 24 minutes
+            Minutes spent on app: 24 minutes
         </h1>
       </div>
       <div>
@@ -106,7 +106,7 @@
               <br>
               Afternoon: Happy
               <br>
-              Hours spent on app: 42 minutes
+              Minutes spent on app: 42 minutes
           </h1>
         </div>
         <div>
@@ -115,7 +115,7 @@
                 <br>
                 Afternoon: Sad
                 <br>
-                Hours spent on app: 22 minutes
+                Minutes spent on app: 22 minutes
             </h1>
           </div>
           <div>
@@ -124,7 +124,7 @@
                   <br>
                   Afternoon: Happy
                   <br>
-                  Hours spent on app: 13 minutes
+                  Minutes spent on app: 13 minutes
               </h1>
             </div>
             <div>
@@ -133,7 +133,12 @@
                     <br>
                     Afternoon: Anxious
                     <br>
-                    Hours spent on app: 43 minutes
+                    Minutes spent on app: 43 minutes
                 </h1>
               </div>
+              <div>
+                  <h1 *ngIf = "nd" id = "moodOfDay">
+                    No Data
+                  </h1>
+                </div>
 </body>
