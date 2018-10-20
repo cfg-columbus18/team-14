@@ -7,20 +7,16 @@ import { Component, OnInit } from '@angular/core';
 export class CalendarComponent implements OnInit {
   c1 : boolean= false;
   c2 : boolean= false;
-  //new
+
    c3 : boolean= false;
    c4 : boolean= false;
    c5 : boolean= false;
    c6 : boolean= false;
    c7 : boolean= false;
    cs : boolean= false;
+   nd: boolean = false;
   constructor() {
-}
-change(){
-  var currentMinute = new Date().getSeconds() / 60;
-  currentMinute = Math.round(currentMinute * 100) / 100
-  document.getElementById("realTime").innerHTML = String(currentMinute);
-}
+
   ngOnInit() {
   }
   reset(){
@@ -32,6 +28,7 @@ change(){
     this.c6 = false;
     this.c7 = false;
     this.cs = false;
+    this.nd = false;
   }
   handleClick(){
     this.reset();
@@ -66,5 +63,9 @@ change(){
     this.reset();
     this.cs = !this.cs;
     this.change();
+  }
+  noData(){
+    this.reset();
+    this.nd = !this.nd;
   }
 }
