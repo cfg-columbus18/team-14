@@ -1,5 +1,5 @@
 body{
-    background: gray;
+    background: #4a9fa1;
 }
 .container {
     max-width:800px;
@@ -7,7 +7,7 @@ body{
 }
 .month{
     text-align: center;
-    background: purple;
+    background: #70706e;
     font-size: 2.5em;
     letter-spacing: 1px;
     color: white;
@@ -30,11 +30,12 @@ th{
     color: white;
 }
 td{
-    background:#3c8a4e;
+    background:white;
 }
 td:hover{
     background:orange;
 }
 #moodOfDay{
     font-size: 25px;
+    padding: 10px;
 }
