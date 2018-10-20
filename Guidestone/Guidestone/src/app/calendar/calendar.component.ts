@@ -5,16 +5,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements OnInit {
-
+  bad : boolean= false;
   constructor() {
     window.onload = function() {
-      var td = document.getElementsByTagName("td");
-      for(var i = 1;i<=31;i++) {
-        var tempTd = td[i];
-        tempTd.style.backgroundColor = "white";
-     }
+          
   };
   }
   ngOnInit() {
+  }
+  handleClick(){
+    this.bad = !this.bad;
   }
 }
