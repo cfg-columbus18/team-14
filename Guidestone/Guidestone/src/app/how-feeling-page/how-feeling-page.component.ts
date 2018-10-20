@@ -98,6 +98,10 @@ export class HowFeelingPageComponent implements OnInit {
     this.why3 = this.suggest[2].why;
   }
 
+  goBack() {
+    this.flag = true;
+  }
+
   updatePoints(num: number) {
     if (num == 1) {
       this.type = this.suggest[0].type;
