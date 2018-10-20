@@ -11,3 +11,6 @@
 
 ## License
 Flaticon Basic License 
+
+## Presentation 
+https://docs.google.com/presentation/d/1JPtjmMl07QbIBL-QUQplaO-tDTq2fk7FmL5P-_5HqVI/edit?usp=sharing
