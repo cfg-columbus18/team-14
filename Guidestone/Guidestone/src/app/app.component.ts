@@ -19,9 +19,5 @@ export class AppComponent implements OnInit {
   username:string = localStorage.getItem("username");
 
 }
-export class AchievementComponent {
-  getAchievements(){
-    
-  }
-}
+
 
