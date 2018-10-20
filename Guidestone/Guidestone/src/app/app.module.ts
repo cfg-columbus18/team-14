@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { HowFeelingPageComponent } from './how-feeling-page/how-feeling-page.component';
 import { WhatActivityPageComponent } from './what-activity-page/what-activity-page.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { AchievementComponent } from './achievement/achievement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstPageComponent,
     HowFeelingPageComponent,
-    WhatActivityPageComponent
+    WhatActivityPageComponent,
+    CalendarComponent,
+    AchievementComponent
   ],
   imports: [
     BrowserModule,

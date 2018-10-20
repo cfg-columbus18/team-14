@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FeelingTransferServiceService } from '../feeling-transfer-service.service';
 
 @Component({
   selector: 'app-what-activity-page',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./what-activity-page.component.scss']
 })
 export class WhatActivityPageComponent implements OnInit {
-  feeling: string = "super sick";
-  constructor() { }
+  constructor(private transferService: FeelingTransferServiceService) { }
 
   ngOnInit() {
+    
   }
+
+  feeling: string = this.transferService.getFeeling();;
+
+  
 
 }
