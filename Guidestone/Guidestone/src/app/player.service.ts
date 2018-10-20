@@ -23,7 +23,7 @@ export class PlayerService {
 
   updateMindfulPoints(value: number){ 
     this.MindfulPoints+=value;
-    this.xp+=value*7; 
+    this.XP+=value*7; 
   }
 
   updatePhysicalPoints(value: number){ 
