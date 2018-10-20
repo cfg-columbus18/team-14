@@ -38,7 +38,7 @@ change(){
 
  currentMinute = Math.round(currentMinute * 100) / 100
 
- document.getElementById(“realTime”).innerHTML = String(currentMinute);
+ document.getElementById("realTime").innerHTML = String(currentMinute);
 
 }
 
