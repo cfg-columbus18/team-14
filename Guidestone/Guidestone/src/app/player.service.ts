@@ -6,10 +6,12 @@ import { Injectable } from '@angular/core';
 export class PlayerService {
   XP: number;
 
-  constructor() { }
+  constructor() { 
+    this.XP = 0;
+  }
 
-  setXP(value: number) {
-    this.XP = value;
+  updateXP(value: number) {
+    this.XP += value;
   }
 
   getXP() {
