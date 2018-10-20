@@ -33,7 +33,7 @@
             Suggested activities if you're feeling {{feeling}}:
         </h1>
         
-        <div class="suggestionBox2">
+        <div (click)="updatePoints(1)" class="suggestionBox2">
             <div class="item">
             {{ suggestion1 }}
             </div>
@@ -41,7 +41,7 @@
                 Why?
             </div>
         </div>
-        <div class="suggestionBox2">
+        <div (click)="updatePoints(2)" class="suggestionBox2">
             <div class="item">
                 {{ suggestion2 }}
             </div>       
@@ -49,7 +49,7 @@
                 Why?
                 </div>
         </div>
-        <div class="suggestionBox2">
+        <div (click)="updatePoints(3)" class="suggestionBox2">
             <div class="item">
                 {{ suggestion3 }}
             </div>

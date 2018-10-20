@@ -33,6 +33,7 @@ export class PlayerService {
 
   updateSocialPoints(value: number){ 
     this.SocialPoints+=value
+  
   }
 
     getTotalPoints() { 
