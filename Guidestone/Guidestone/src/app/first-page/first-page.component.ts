@@ -13,6 +13,9 @@ export class FirstPageComponent implements OnInit {
   }
   saveName() {
     let username= ((document.getElementById("username") as HTMLInputElement).value);
+    if (username == ""){
+      username = "User";
+    }
 
     localStorage.setItem("username",username);
     // localStorage.setItem("fitness",fitness);

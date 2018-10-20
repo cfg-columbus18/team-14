@@ -55,13 +55,13 @@ export class PlayerService {
     updatePoints(num: number) {
       if (num == 1) {
         this.updatePhysicalPoints(15);
-        this.increase(15);
+        this.increase(35);
       } else if (num == 2) {
         this.updateMindfulPoints(15);
         this.increase(25);
       } else if (num == 3) {
         this.updateSocialPoints(15);
-        this.increase(35);
+        this.increase(15);
       }
     }
       
