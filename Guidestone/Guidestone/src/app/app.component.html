@@ -6,8 +6,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body class="mainBox">
-        <div class="profileBar container">
+<body class="mainBox" ng-app>
+        <div class="profileBar">
+                <p>name</p>
+                <p>{{ username }}</p>
         </div>
         <div class="routerBox">
         <router-outlet></router-outlet>
@@ -15,7 +17,7 @@
         <div class="navBar">
             <div class="navTab" routerLink="/how-feeling" routerLinkActive="active">how</div>
             <div class="navTab" routerLink="/calendar" routerLinkActive="active">Calendar</div>
-            <div class="navTab" routerLink="" routerLinkActive="active">Profile</div>
+            <div class="navTab" routerLink="/achievement" routerLinkActive="active">Profile</div>
         </div>
     </body>
 </html>
