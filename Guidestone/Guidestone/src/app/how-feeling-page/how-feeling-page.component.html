@@ -34,10 +34,14 @@
             Suggested activities if you're feeling {{feeling}}:
         </h1>
         <div (click)="updatePoints(1)" class="suggestionBox2">
+        <div class="out-wrapper">
+            <div [hidden]="!chosenFlag1" class="in-wrapper">
+            <img src="https://png.icons8.com/metro/1600/checkmark.png" width="50px" height="50px"/>
+        </div>
             <div class="item">
             {{ suggestion1 }}
             </div>
-
+        </div>
             <div (click)="flipFlag(1)" *ngIf="whyFlag1" class="whyBox">
                     Why?
             </div>
@@ -48,9 +52,14 @@
        
         <div (click)="updatePoints(2)" class="suggestionBox2">
 
-            <div class="item">
-                {{ suggestion2 }}
-            </div>       
+                <div class="out-wrapper">
+                        <div [hidden]="!chosenFlag2" class="in-wrapper">
+                        <img src="https://png.icons8.com/metro/1600/checkmark.png" width="50px" height="50px"/>
+                    </div>
+                        <div class="item">
+                        {{ suggestion2 }}
+                        </div>
+                    </div>      
 
             <div (click)="flipFlag(2)" *ngIf="whyFlag2" class="whyBox">
                 Why?
@@ -62,9 +71,14 @@
         </div>
 
         <div (click)="updatePoints(3)" class="suggestionBox2">
-            <div class="item">
-                {{ suggestion3 }}
-            </div>
+                <div class="out-wrapper">
+                        <div [hidden]="!chosenFlag3" class="in-wrapper">
+                        <img src="https://png.icons8.com/metro/1600/checkmark.png" width="50px" height="50px"/>
+                    </div>
+                        <div class="item">
+                        {{ suggestion3 }}
+                        </div>
+                    </div>
             <div (click)="flipFlag(3)" *ngIf="whyFlag3" class="whyBox">
                     Why?
             </div>

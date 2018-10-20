@@ -67,6 +67,7 @@ button {
 }
 
 .item {
+    display: inline-block;
     color: white;
     font-size: 25px;
     padding: 10px;
@@ -100,4 +101,11 @@ button {
     color: #60d1d3;
     background-color: white;
     border-radius: 15px;
+}
+
+.out-wrapper {
+    display: flex;
+}
+.in-wrapper {
+    display: inline-block;
 }

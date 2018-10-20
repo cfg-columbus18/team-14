@@ -23,6 +23,10 @@ export class HowFeelingPageComponent implements OnInit {
   suggestion2: string;
   why2: string;
 
+  chosenFlag1: boolean = false;
+  chosenFlag2: boolean = false;
+  chosenFlag3: boolean = false;
+
   suggestion3: string;
   why3: string;
 
@@ -104,19 +108,26 @@ export class HowFeelingPageComponent implements OnInit {
 
   goBack() {
     this.flag = true;
+    this.chosenFlag1 = false;
+    this.chosenFlag2 = false;
+    this.chosenFlag3 = false;
+
   }
 
   updatePoints(num: number) {
     if (num == 1) {
       this.type = this.suggest[0].type;
       this.player.updatePoints(this.type);
+      this.chosenFlag1 = true;
     } else if (num == 2) {
       this.type = this.suggest[1].type;
       this.player.updatePoints(this.type);
+      this.chosenFlag2 = true;
 
     } else if (num == 3) {
       this.type = this.suggest[2].type;
       this.player.updatePoints(this.type);
+      this.chosenFlag3 = true;
 
     }
   }
