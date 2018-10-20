@@ -15,4 +15,6 @@ export class WhatActivityPageComponent implements OnInit {
 
   feeling: string = this.transferService.getFeeling();;
 
+  
+
 }

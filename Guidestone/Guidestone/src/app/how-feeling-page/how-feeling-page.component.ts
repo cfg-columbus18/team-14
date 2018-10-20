@@ -34,4 +34,9 @@ export class HowFeelingPageComponent implements OnInit {
     this.router.navigate(['/what-activity']);
   }
 
+  setFeelingRestless() {
+    this.transferService.setFeeling("Restless");
+    this.router.navigate(['/what-activity']);
+  }
+
 }
