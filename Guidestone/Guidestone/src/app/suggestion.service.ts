@@ -55,7 +55,7 @@ export class SuggestionService {
       why: "Helps relieve tension"
     },
     {
-      mood: "workout",
+      mood: "angry",
       activity: "Workout",
       why: "Makes you happier" 
     }

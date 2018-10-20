@@ -28,6 +28,8 @@ button {
     color: white;
     font-size: 50px;
     background-color: #60d1d3;
+    border-radius: 15px;
+
 }
 
 .emoji {
@@ -61,4 +63,11 @@ button {
     margin-bottom: 10px;
     height: 20%;
     background-color: #60d1d3;
+    border-radius: 15px;
+}
+
+.item {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
 }
