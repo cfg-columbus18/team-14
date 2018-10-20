@@ -16,6 +16,12 @@ export class HowFeelingPageComponent implements OnInit {
   feeling: string;
   index: number;
   suggest: Sugg[];
+  suggestion1: string;
+  why1: string;
+  suggestion2: string;
+  why2: string;
+  suggestion3: string;
+  why3: string;
   ngOnInit() {
   }
 
@@ -75,7 +81,16 @@ export class HowFeelingPageComponent implements OnInit {
     } else if (this.feeling === "Happy") {
       this.index = 4;
     }
+
     this.suggest = this.suggestion.getSuggestions(this.index);
+
+    console.log(this.suggest);
+    this.suggestion1 = this.suggest[0].activity;
+    this.why1 = this.suggest[0].why;
+    this.suggestion2 = this.suggest[1].activity;
+    this.why2 = this.suggest[1].why;
+    this.suggestion3 = this.suggest[2].activity;
+    this.why3 = this.suggest[2].why;
   }
 
 }
