@@ -1,11 +1,15 @@
-body{
-    color:white;
-}
-.header{
+.box{
     text-align: center;
     margin: 0 auto;
     padding: none;
+    color:white;
 }
-.box {
+.header{
+    font-size:30px;
+}
 
+.box button{
+    margin:0 2%;
+    background-color: aquamarine;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20 px 0 rgba(0,0,0,0.19);
 }
