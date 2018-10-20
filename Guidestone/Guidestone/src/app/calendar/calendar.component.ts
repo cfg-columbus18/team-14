@@ -8,14 +8,12 @@ export class CalendarComponent implements OnInit {
 
   constructor() {
     window.onload = function() {
+      var td = document.getElementsByTagName("td");
+      for(var i = 1;i<=31;i++) {
+        var tempTd = td[i];
+        tempTd.style.backgroundColor = "white";
+     }
   };
-  }
-  test1(){
-    var td = document.getElementsByTagName("td");
-    for(var i = 1;i<=td.length;i++) {
-      var tempTd = td[i];
-      tempTd.style.color = "white";
-   }
   }
   ngOnInit() {
   }
