@@ -6,11 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-page.component.scss']
 })
 export class FirstPageComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
-
+  saveName() {
+    let username= ((document.getElementById("username") as HTMLInputElement).value);
+    localStorage.setItem("username",username) //JSON.stringify({token:"name", name: username}
+    alert("Hello " + username);
+  }
 }
+
 

@@ -10,8 +10,8 @@
 </div>
 <div class = "box answer">
     <form>
-        <input type="text" name="username" ng-model="user.name">
-        <button id = "submitID" type="submit" name="Enter" ng-model="">Enter</button>
+        <input type="text" id="username" ng-model="username">
+        <button id = "submitID" type="submit" name="Enter" (click)="saveName()">Enter</button>
     </form>
 </div>
 <div class = "box gallery">
