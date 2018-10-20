@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./what-activity-page.component.scss']
 })
 export class WhatActivityPageComponent implements OnInit {
-
+  feeling: string = "super sick";
   constructor() { }
 
   ngOnInit() {
