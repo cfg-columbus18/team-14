@@ -23,9 +23,11 @@
 }
 
 .navTab {
-    width: 138px;
-    height: 100%;
+    width: 117px;
+    height: 60px;
     display: inline-block;
     text-align: center;
-    vertical-align: middle;
+    padding: 10px;
+    border-width: 2px;
+    border-color: black;
 }
