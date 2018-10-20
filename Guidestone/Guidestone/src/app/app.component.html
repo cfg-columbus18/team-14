@@ -1,4 +1,7 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -8,9 +11,9 @@
 </head>
 <body class="mainBox" ng-app>
         <div class="profileBar">
-                <h1>{{ username }}</h1>
-                <!-- <div id = "xpBase"><p>XP: {{ 0 }}</p></div> -->
-                <div id = "xp"><p>XP: {{ XP }}</p></div>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:25%">25%</div>
+            </div><br>
         </div>
         <div class="routerBox">
         <router-outlet></router-outlet>
