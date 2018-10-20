@@ -33,7 +33,7 @@ export class SuggestionService {
   sadSuggestions: Sugg[] = [
     {
       mood: "sad",
-      activity: "Looking at photo album",
+      activity: "Look at family photo",
       why: "Focuses your thoughts on what matters",
       type: 3
     },
