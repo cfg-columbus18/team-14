@@ -23,6 +23,7 @@ button {
     margin-right:auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
     height: 12%;
     color: white;
     font-size: 50px;
@@ -30,8 +31,14 @@ button {
 }
 
 .emoji {
+    display: inline-block;
     padding-top: 5px;
-    margin-right: 80%;
-    width: 50px;
-    height: 50px;
+    padding-left: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.emotionBox {
+    padding-left: 40px;
+    display: inline-block;
 }
