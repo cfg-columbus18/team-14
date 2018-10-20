@@ -29,13 +29,15 @@
 </div>
 
 <div *ngIf="!flag"class="mainGrid">
+
         <h1 class="top">
             Suggested activities if you're feeling {{feeling}}:
         </h1>
-
+        <div (click)="updatePoints(1)" class="suggestionBox2">
             <div class="item">
             {{ suggestion1 }}
             </div>
+
             <div (click)="flipFlag(1)" *ngIf="whyFlag1" class="whyBox">
                     Why?
             </div>
@@ -43,19 +45,22 @@
                     {{this.suggest[0].why}}
             </div>            
         </div>
+       
         <div (click)="updatePoints(2)" class="suggestionBox2">
+
             <div class="item">
                 {{ suggestion2 }}
             </div>       
+
             <div (click)="flipFlag(2)" *ngIf="whyFlag2" class="whyBox">
                 Why?
-                
-                </div>
-                <div (click)="flipFlag(2)"*ngIf="!whyFlag2" class="whyBox2">
-                        {{this.suggest[1].why}}
-                </div>                
+            </div>
+
+            <div (click)="flipFlag(2)"*ngIf="!whyFlag2" class="whyBox2">
+                    {{this.suggest[1].why}}
+            </div>                
         </div>
-<<<<<<< HEAD
+
         <div (click)="updatePoints(3)" class="suggestionBox2">
             <div class="item">
                 {{ suggestion3 }}
@@ -70,8 +75,6 @@
 
         <div (click)="goBack()" class="backBox">
                 Back
-            </div>
-         
+        </div>
+        
 </div>
-=======
->>>>>>> 1424db1ac200bda6f73708b7889fa9b4bad84185
