@@ -101,11 +101,15 @@ export class HowFeelingPageComponent implements OnInit {
   updatePoints(num: number) {
     if (num == 1) {
       this.type = this.suggest[0].type;
-      
+      this.player.updatePoints(this.type);
     } else if (num == 2) {
       this.type = this.suggest[1].type;
+      this.player.updatePoints(this.type);
+
     } else if (num == 3) {
       this.type = this.suggest[2].type;
+      this.player.updatePoints(this.type);
+
     }
   }
 
