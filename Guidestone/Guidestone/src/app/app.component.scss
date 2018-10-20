@@ -40,12 +40,12 @@
 .profileBar {
     background-color: rgb(129, 255, 228);
     width: 100%;
-    height: 58px;
+    height: 10%;
     color:white;
 }
 .profileBar h1{
-    padding: 2px;
-    margin: 2px 5px;
+    padding: 0;
+    margin: 0 5px;
     float: left;
 }
 // for other pages box
@@ -62,12 +62,6 @@
     position: relative;
     font-size: 20px;
 }
-// .xpBase{
-//     background-color: black;
-//     width: 100px;
-//     height: 30px;
-//     position: absolute;
-//     top: 30px;
-//     left: 100px;
-//     margin: 5% 0;
-// }
+#level{
+    float:right;
+}
