@@ -80,7 +80,7 @@ export class PlayerService {
        }
       (<HTMLInputElement>document.getElementById("myBar")).innerText = width + '';
            document.getElementById("myBar").style.width = width + '%';
-           document.getElementById("level").innerText = this.level.toString();
+           document.getElementById("level").innerText = "Level: " + this.level.toString();
            
        
   }
