@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import $ from 'jquery';
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
@@ -8,15 +7,14 @@ import $ from 'jquery';
 export class CalendarComponent implements OnInit {
 
   constructor() {
-    if ($.ready()) {
-      console.log('ready');
-    }
+    window.onload = function() {
+  };
   }
   test1(){
     var td = document.getElementsByTagName("td");
     for(var i = 1;i<=td.length;i++) {
       var tempTd = td[i];
-      tempTd.bgColor = "white";
+      tempTd.style.color = "white";
    }
   }
   ngOnInit() {
