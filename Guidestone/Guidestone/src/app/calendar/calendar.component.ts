@@ -8,7 +8,7 @@ export class CalendarComponent implements OnInit {
   bad : boolean= false;
   constructor() {
     window.onload = function() {
-          
+
   };
   }
   ngOnInit() {

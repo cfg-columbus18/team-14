@@ -23,5 +23,20 @@ export class AppComponent implements OnInit {
     this.XP = this.player.getXP();
   }
 
+  
+  increase() {
+    var width = +(<HTMLInputElement>document.getElementById("myBar")).innerText;
+
+    if (width >= 100) {
+      width = 0;
+    } else {
+         width+= 20;
+         
+       }
+       (<HTMLInputElement>document.getElementById("myBar")).innerText = width + '';
+           document.getElementById("myBar").style.width = width + '%';
+
+  }
+
 
 }
