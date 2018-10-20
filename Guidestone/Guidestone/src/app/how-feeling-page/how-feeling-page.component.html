@@ -1,3 +1,5 @@
+
+<div *ngIf="flag">
 <h1 id = "maintext">
     How are you feeling?
 </h1>
@@ -23,4 +25,22 @@
         <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Emoji_Icon_34f238ed-d557-4161-b966-779d8f37b1ac_large.png?v=1513251058" width="50" height="50"/>
         <div class="emotionBox">Happy</div>
     </div>
+</div>
+</div>
+
+<div *ngIf="!flag"class="mainGrid">
+        <h1 class="top">
+            Suggested activities if you're feeling {{feeling}}:
+        </h1>
+        
+        <div class="suggestionBox2">
+        
+        </div>
+        <div class="suggestionBox2">
+        
+        </div>
+        <div class="suggestionBox2">
+        
+        </div>
+         
 </div>

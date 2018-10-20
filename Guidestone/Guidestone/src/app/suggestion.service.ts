@@ -43,5 +43,69 @@ export class SuggestionService {
     }
   ];
   
+  angrySuggestions: Sugg[] = [
+    {
+      mood: "angry",
+      activity: "Journal",
+      why: "Helps process emotions"
+    },
+    {
+      mood: "angry",
+      activity: "Phone a friend",
+      why: "Helps relieve tension"
+    },
+    {
+      mood: "workout",
+      activity: "Workout",
+      why: "Makes you happier" 
+    }
+  ];    
+  
+  anxiousSuggestions: Sugg[] = [
+    {
+      mood: "anxious",
+      activity: "Count 100 breaths",
+      why: "Concentrates energy elsewhere"
+    },
+    {
+      mood: "anxious",
+      activity: "Journal",
+      why: "Helps process thoughts"
+    },
+    {
+      mood: "anxious",
+      activity: "Yoga/Tai Chi",
+      why: "Concentrates energy elsewhere"
+    }
+  ];  
+  restlessSuggestions: Sugg[] = [
+    {
+      mood: "restless",
+      activity: "Meditate",
+      why: "Helps relax"
+    },
+    {
+      mood: "restless",
+      activity: "Walking outside",
+      why: "Reduces anxiety"
+    },
+    {
+      mood: "restless",
+      activity: "Jogging outside",
+      why: "Improves heart health"
+    }
+  ];
+ 
+  suggestions: Sugg[][] = [
+    this.sadSuggestions,
+    this.angrySuggestions,
+    this.anxiousSuggestions,
+    this.restlessSuggestions,
+    this.happySuggestions
+  ];
+
+  getSuggestions(index: number): Sugg[] {
+    return this.suggestions[index];
+  }
 
 }
