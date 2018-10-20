@@ -4,6 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PlayerService {
+  XP: number;
 
-  constructor() { }
+  constructor() { 
+    this.XP = 0;
+  }
+
+  updateXP(value: number) {
+    this.XP += value;
+  }
+
+  getXP() {
+    return this.XP;
+  }
 }
