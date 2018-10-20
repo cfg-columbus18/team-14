@@ -50,7 +50,15 @@ export class PlayerService {
       return this.SocialPoints;
     }
 
-
+    updatePoints(num: number) {
+      if (num == 1) {
+        this.updatePhysicalPoints(15);
+      } else if (num == 2) {
+        this.updateMindfulPoints(15);
+      } else if (num == 3) {
+        this.updateSocialPoints(15);
+      }
+    }
 
   getXP() {
     return this.XP;
