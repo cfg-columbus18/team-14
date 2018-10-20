@@ -26,6 +26,10 @@ export class HowFeelingPageComponent implements OnInit {
   suggestion3: string;
   why3: string;
 
+  whyFlag1: boolean = true;
+  whyFlag2: boolean = true;
+  whyFlag3: boolean = true;
+
 
   ngOnInit() {
   }
@@ -115,6 +119,12 @@ export class HowFeelingPageComponent implements OnInit {
       this.player.updatePoints(this.type);
 
     }
+  }
+
+  flipFlag(num: number) {
+    if (num == 1) this.whyFlag1 = !this.whyFlag1;
+    else if (num == 2) this.whyFlag2 = !this.whyFlag2;
+    else if (num == 3) this.whyFlag3 = !this.whyFlag3;
   }
 
 }
