@@ -1,7 +1,21 @@
-.center {
-    display: block;
-    width: inherit;
-    height: inherit;
-    padding-left: auto;
-    padding-right: auto
+#maintext{
+    text-align: center;
+    padding-top:50px;
+    color: white;
+    font-size: 50px;
+}
+.grid-container {
+    margin:auto;
+    width: 50%;
+    height: 618px;
+    text-align: center;
+}
+.grid-item{
+    padding: 15px 32px;
+}
+
+button {
+    padding: 10px 75px;
+    display: flex;
+    justify-content: center;
 }
