@@ -11,6 +11,8 @@ export class CalendarComponent implements OnInit {
    c3 : boolean= false;
    c4 : boolean= false;
    c5 : boolean= false;
+   c6 : boolean= false;
+   c7 : boolean= false;
   constructor() {
 }
   ngOnInit() {
@@ -21,6 +23,8 @@ export class CalendarComponent implements OnInit {
     this.c3 = false;
     this.c4 = false;
     this.c5 = false;
+    this.c6 = false;
+    this.c7 = false;
   }
   handleClick(){
     this.reset();
@@ -41,5 +45,13 @@ export class CalendarComponent implements OnInit {
   handleClick5(){
     this.reset();
     this.c5 = !this.c5;
+  }
+  handleClick6(){
+    this.reset();
+    this.c6 = !this.c6;
+  }
+  handleClick7(){
+    this.reset();
+    this.c7 = !this.c7;
   }
 }
