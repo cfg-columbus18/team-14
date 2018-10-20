@@ -18,7 +18,7 @@
         <tr>
           <td></td>
           <td (click)="handleClick()">1</td>
-          <td (click)="handleClick()">2</td>
+          <td (click)="handleClick2()">2</td>
           <td>3</td>
           <td>4</td>
           <td>5</td>
@@ -62,9 +62,14 @@
                 </tr>
       </table>
   </div>
-  <div *ngIf="Sad">
-<h1>
-  hello
-</h1>
+  <div>
+    <h1 *ngIf = "c1" id = "moodOfDay">
+      hello
+    </h1>
   </div>
+  <div>
+      <h1 *ngIf = "c2" id = "moodOfDay">
+        test
+      </h1>
+    </div>
 </body>
