@@ -18,7 +18,7 @@ export class AchievementComponent implements OnInit {
     this.socialP = player.getSocialPoints();
     this.totalP = player.getTotalPoints();
    }
-   update(){
+   updateAchievements(){
     this.mindP = this.player.getMindfulPoints();
     this.physicalP = this.player.getPhysicalPoints();
     this.socialP = this.player.getSocialPoints();

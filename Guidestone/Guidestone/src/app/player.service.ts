@@ -28,15 +28,16 @@ export class PlayerService {
 
   updatePhysicalPoints(value: number){ 
     this.PhysicalPoints+=value;
-    this.XP+=value;
+    this.XP+=value *6;
   }
 
   updateSocialPoints(value: number){ 
     this.SocialPoints+=value
+    this.XP += value * 8;
   }
 
     getTotalPoints() { 
-      return this.TotalPoints; 
+      return this.XP; 
     }
     getMindfulPoints(){ 
       return this.MindfulPoints;

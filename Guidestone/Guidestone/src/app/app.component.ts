@@ -6,6 +6,11 @@ import { PlayerService} from './player.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+@Component({
+  selector: './achievement',
+  templateUrl: './achievement/achievement.component.html',
+  styleUrls: ['./achievement/achievement.component.scss'],
+})
 export class AppComponent implements OnInit {
   XP:number;
   constructor(private player: PlayerService) {
@@ -15,13 +20,13 @@ export class AppComponent implements OnInit {
   }
 
   username:string = localStorage.getItem("username");
-  updateXP( xpPoint: number){
-    this.player.updateXP(xpPoint);
-  }
 
-  setXPBar(){
-    this.XP = this.player.getXP();
-  }
 
 
 }
+export class AchievementComponent {
+  getAchievements(){
+    
+  }
+}
+
