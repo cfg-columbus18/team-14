@@ -13,7 +13,13 @@ export class CalendarComponent implements OnInit {
    c5 : boolean= false;
    c6 : boolean= false;
    c7 : boolean= false;
+   cs : boolean= false;
   constructor() {
+}
+change(){
+  var currentMinute = new Date().getSeconds() / 60;
+  currentMinute = Math.round(currentMinute * 100) / 100
+  document.getElementById("realTime").innerHTML = String(currentMinute);
 }
   ngOnInit() {
   }
@@ -25,10 +31,12 @@ export class CalendarComponent implements OnInit {
     this.c5 = false;
     this.c6 = false;
     this.c7 = false;
+    this.cs = false;
   }
   handleClick(){
     this.reset();
     this.c1 = !this.c1;
+    this.change();
   }
   handleClick2(){
     this.reset();
@@ -53,5 +61,10 @@ export class CalendarComponent implements OnInit {
   handleClick7(){
     this.reset();
     this.c7 = !this.c7;
+  }
+  handleClickCS(){
+    this.reset();
+    this.cs = !this.cs;
+    this.change();
   }
 }
