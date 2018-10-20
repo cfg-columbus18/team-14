@@ -7,16 +7,21 @@ import { PlayerService} from './player.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  XP:number;
   constructor(private player: PlayerService) {
-    XP:var;
+    
   }
   ngOnInit() {
   }
 
   username:string = localStorage.getItem("username");
-
-  getXP(){
-    xp = this.player.getXP();
+  updateXP( xpPoint: number){
+    this.player.updateXP(xpPoint);
   }
+
+  setXPBar(){
+    this.XP = this.player.getXP();
+  }
+
 
 }
