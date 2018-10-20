@@ -16,12 +16,7 @@ export class CalendarComponent implements OnInit {
    cs : boolean= false;
    nd: boolean = false;
   constructor() {
-}
-change(){
-  var currentMinute = new Date().getSeconds() / 60;
-  currentMinute = Math.round(currentMinute * 100) / 100
-  document.getElementById("realTime").innerHTML = String(currentMinute);
-}
+
   ngOnInit() {
   }
   reset(){

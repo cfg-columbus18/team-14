@@ -22,6 +22,21 @@ export class AppComponent implements OnInit {
   username:string = localStorage.getItem("username");
 
 
+  
+  increase() {
+    var width = +(<HTMLInputElement>document.getElementById("myBar")).innerText;
+
+    if (width >= 100) {
+      width = 0;
+    } else {
+         width+= 20;
+         
+       }
+       (<HTMLInputElement>document.getElementById("myBar")).innerText = width + '';
+           document.getElementById("myBar").style.width = width + '%';
+
+  }
+
 
 }
 export class AchievementComponent {
