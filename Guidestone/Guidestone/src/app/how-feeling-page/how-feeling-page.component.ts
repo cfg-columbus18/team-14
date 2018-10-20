@@ -3,6 +3,7 @@ import { FeelingTransferServiceService } from '../feeling-transfer-service.servi
 import { Router } from '@angular/router';
 import { Sugg } from '../sugg';
 import { SuggestionService } from '../suggestion.service';
+import { PlayerService } from '../player.service';
 
 @Component({
   selector: 'app-how-feeling-page',
@@ -11,17 +12,21 @@ import { SuggestionService } from '../suggestion.service';
 })
 export class HowFeelingPageComponent implements OnInit {
 
-  constructor(private transferService: FeelingTransferServiceService, private router: Router, private suggestion: SuggestionService) { }
+  constructor(private player: PlayerService, private transferService: FeelingTransferServiceService, private router: Router, private suggestion: SuggestionService) { }
   flag: boolean = true;
   feeling: string;
   index: number;
   suggest: Sugg[];
   suggestion1: string;
   why1: string;
+  type: number;
   suggestion2: string;
   why2: string;
+
   suggestion3: string;
   why3: string;
+
+
   ngOnInit() {
   }
 
@@ -91,6 +96,17 @@ export class HowFeelingPageComponent implements OnInit {
     this.why2 = this.suggest[1].why;
     this.suggestion3 = this.suggest[2].activity;
     this.why3 = this.suggest[2].why;
+  }
+
+  updatePoints(num: number) {
+    if (num == 1) {
+      this.type = this.suggest[0].type;
+      
+    } else if (num == 2) {
+      this.type = this.suggest[1].type;
+    } else if (num == 3) {
+      this.type = this.suggest[2].type;
+    }
   }
 
 }
