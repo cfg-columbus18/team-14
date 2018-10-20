@@ -2,20 +2,35 @@
     text-align: center;
     padding-top: 20px;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
 }
+
+
 .grid-container {
     margin:auto;
     width: 100%;
     height: 618px;
     text-align: center;
 }
+.grid-container :hover {
+    color: black;
+}
 
 button {
-    padding: 10px 75px;
+    padding: 20px 50px;
     display: flex;
     justify-content: center;
+    
 }
+
+.suggestionBox2 :hover {
+    color: lightblue;
+}
+
+.emotionBox :active {
+    color: lightgray;
+}
+
 
 .suggestionBox {
     width: 80%;
@@ -26,10 +41,14 @@ button {
     display: flex;
     height: 12%;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     background-color: #60d1d3;
     border-radius: 15px;
 
+}
+
+.suggestionBox :active {
+    color: white;
 }
 
 .emoji {
