@@ -10,12 +10,14 @@ export class PlayerService {
   PhysicalPoints:number; 
   SocialPoints:number;
   level:number;
+  avatar:string;
   constructor() { 
     this.XP = 0;
     this.MindfulPoints=0; 
     this.PhysicalPoints=0; 
     this.SocialPoints=0; 
     this.level=0;
+    this.avatar = "assets/hippo.svg"
   }
 
   updateXP(value: number) {
@@ -89,5 +91,11 @@ export class PlayerService {
   }
   getXP() {
     return this.XP;
+  }
+  updateAvatar(value:string) {
+    this.avatar = value;
+  }
+  getAvatar(){
+    return this.avatar;
   }
 }

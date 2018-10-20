@@ -22,6 +22,13 @@
         <button class = "btn btn success" id = "submitID" name="Enter" (click)="saveName()">Enter</button>
     </form>
 </div>
-<div class = "box gallery">
-    
+<br>
+<br>
+<br>
+<div class = "box">
+    <button (click)="changeAvatar(1)"><img class = "gallery" src ="assets/bulldog.svg" alt="img1" width="100px" height="100px"/></button>
+    <img class = "gallery" src ="assets/llama.svg" alt="img2" width="100px" height="100px" onclick="changeAvatar(2)"/>
+    <img class = "gallery" src ="assets/mouse.svg" alt="img3" width="100px" height="100px" onclick="changeAvatar(3)"/>
+    <img class = "gallery" src ="assets/squirrel.svg" alt="img4" width="100px" height="100px" onclick="changeAvatar(4)"/>
+
 </div>

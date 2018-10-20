@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 import {Router} from "@angular/router";
+import { PlayerService} from '../player.service';
 
 @Component({
   selector: 'app-first-page',
@@ -7,7 +8,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./first-page.component.scss']
 })
 export class FirstPageComponent implements OnInit {
-  constructor(private router: Router) { }
+  @Output() notifyParent: EventEmitter<any> = new EventEmitter();
+  txt:string;
+  constructor(private router: Router, private player: PlayerService) { }
 
   ngOnInit() {
   }
@@ -22,6 +25,27 @@ export class FirstPageComponent implements OnInit {
     // alert(fitness);
     this.router.navigate(['/how-feeling']);
   }
+  changeAvatar(value: number){
+
+    if (value == 1){
+      this.player.updateAvatar("assets/bulldog.svg");
+      this.txt = this.player.getAvatar();
+    } else if (value == 2){
+      this.player.updateAvatar("assets/llama.svg");
+      this.txt = this.player.getAvatar();
+
+    }else if (value == 3){
+      this.player.updateAvatar("assets/mouse.svg");
+      this.txt = this.player.getAvatar();
+
+    }else if (value == 4){
+      this.player.updateAvatar("assets/squirrel.svg");
+      this.txt = this.player.getAvatar();
+
+    }
+    this.notifyParent.emit(this.txt);
+  }
+
 
 }
 
