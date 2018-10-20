@@ -22,7 +22,7 @@
     width: 100%;
     height: 60px;
     display: flex;
-    background-color: #c0c7c7;
+    background-color: rgb(129, 255, 228);
 }
 
 .navTab {
@@ -38,8 +38,13 @@
 }
 
 .profileBar {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(129, 255, 228);
     width: 100%;
     height: 58px;
     color:white;
+}
+.profileBar h1{
+    padding: 2px;
+    margin: 2px 5px;
+    float: left;
 }
